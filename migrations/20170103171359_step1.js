@@ -1,6 +1,6 @@
 
 exports.up = function(knex, Promise) {
-  return Promise.all(
+  return Promise.all([
     //Khi dùng raw query thì lệnh withSchema không còn ý nghĩa nữa, phải ghi rõ blog.person_status
     knex.schema.raw("CREATE TYPE blog.person_status AS ENUM ('create', 'pending', 'processed')"),
 

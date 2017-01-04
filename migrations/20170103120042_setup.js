@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     knex.schema.withSchema('blog').createTable('post', function(table){
       table.bigInteger('id').primary().defaultTo(knex.raw('util.id_generator()'));
       table.text('title').comment("You can comment a column");
-      table.specificType('authors',  'knex.raw('text[]')');
+      table.specificType('authors', knex.raw('text[]'));
       table.comment('All posts will store here');
     }),
 
