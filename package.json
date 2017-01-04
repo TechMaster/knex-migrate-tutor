@@ -1,0 +1,21 @@
+{
+  "name": "demo-knex",
+  "version": "1.0.0",
+  "description": "Demo Knex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Knex"
+  ],
+  "author": "Trịnh Minh Cường",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.12.6",
+    "pg": "^6.1.2"
+  },
+  "devDependencies": {
+    "knex-seed-file": "^0.2.0"
+  }
+}
